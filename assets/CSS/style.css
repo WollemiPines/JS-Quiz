@@ -1,7 +1,8 @@
+/* All ellements */
 * {
     box-sizing: border-box;
   }
-  
+  /* whole document */
   body {
     font-family: Arial;
     margin: 0;
@@ -11,11 +12,11 @@
     background:#ffffff;
   }
   
-  
+  /* all buttons */
   button {
     color: #000000;
     background-color: #ffffff;
-    border: 1px solid #eceff1;
+    border: 0.1px solid #ffffff;
     border-radius: 8px;
     box-shadow: rgba(60, 64, 67, 2) 0 1px 2px 0,
       rgba(60, 64, 67, 0.15) 0 2px 4px 3px;
@@ -27,7 +28,10 @@
     text-align: center;
     margin-top: 6px;
   }
-  
+  button:hover {
+    background-color: #8bc76a;
+  }
+  /* header */
   header {
     display: flex;
     flex-direction: row;
@@ -38,7 +42,7 @@
     color: rgb(0, 0, 0);
     border-bottom:30px #879274;
   }
-
+/* everything except the header */
   main {
     display: flex;
     flex-direction: column;
@@ -50,18 +54,19 @@
     padding-right: 5%;
   }
   
-  
+  /* timer display */
   .card {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    border: 1px solid #eceff1;
+    border: 0.1px solid #ffffff;
     border-radius: 8px;
     box-shadow: rgba(60, 64, 67, 2) 0 1px 2px 0,
       rgba(60, 64, 67, 0.15) 0 2px 4px 3px;
     margin: auto;
     padding: 20px;
   }
+  /* headings */
   h1, .timer-count{
     font-size: 100%;
     padding: 0px;
@@ -74,21 +79,23 @@
     display: flex;
     flex-wrap: wrap;
   }
-  h3{
+  h3, h4{
     color: #464646;
     font-size: 150%;
     padding: 10px;
   }
+  h4 button{
+font-size: 60%;
+  }
+/* highscores endscreen */
+  .highscores {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
 
-.active-slide{
-  opacity: 1;
-  z-index: 2;
-}
-.slide{
-  opacity: 0;
-  z-index: 1;
-}
- 
+ /* auto reszing */
   @media screen and (max-width: 1183px) {
     main {
       flex-direction: column;
